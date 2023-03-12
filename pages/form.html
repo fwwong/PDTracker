@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDTracker</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <!-- NAVBAR  -->
+    <div class="topnav">
+        <div class="side-nav">
+            <ul>
+                <li><a link="links" href="../index.html"> Home </a></li>
+                <li><a link="links" href="../pages/profile.html"> Profile </a></li>
+                <li><a link="links" href="../pages/history.html"> History </a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <img class="logo" src="../images/trans_logo.png" alt="logo"></img>
+        </div>
+
+        <div class="side-nav">
+            <ul>
+                <li><a link="links" href="../pages/achievements.html"> Achievements </a>
+                <li><a link="links" href="../pages/resume.html"> Resume </a></li>
+                <li><a link="links" href="../pages/coverletter.html"> Cover Letter </a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- form -->
+    <form>
+        <h5> Where do you want to change?</h5>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">Profile</option>
+            <option value="2">History</option>
+            <option value="3">Achievements</option>
+            <option value="4">Resume</option>
+            <option value="5">Cover Letter</option>
+        </select>
+
+        <div class="mb-3">
+            <br>
+            <label for="formFileMultiple" class="form-label">ATTACHMENTS</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"> REQUEST TITLE</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Request">
+        </div>
+
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Write your request" id="floatingTextarea2" style="height: 500px"></textarea>
+            <label for="floatingTextarea2"></label>
+          </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+    </form>
+
+
+    <!-- footer -->
+    <footer>
+        <hr>
+        <p class="text-center text-muted">&copy; 2023 PDTracker</p>
+    </footer>
+</body>
+
+</html>
